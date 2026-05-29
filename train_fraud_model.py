@@ -40,6 +40,7 @@ def main():
     model_path = "hdfs:///models/fraud_rf_model"
     model.write().overwrite().save(model_path)
     print(f">>> Model successfully saved to {model_path}")
+    print("Training Done")
 
     spark.stop()
 
